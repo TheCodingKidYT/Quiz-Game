@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #1b1e2b;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.title{
+    font-size: 40px;
+}
+
+.playBtn{
+    margin-top: 200px;
+    width: 130px;
+    height: 60px;
+    cursor: pointer;
+    border: white 5px solid;
+    border-radius: 50px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+    transition: width 0.5s;
+    background-color: orange;
+}
+
+.playBtn a{
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.playBtn:hover{
+    width: 160px;
+}
+
+.main{
+    height: 100vh;
+}
+
+.gameContainer{
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 200px 200px;
+}
+
+.option{
+    width: 200px;
+    height: 200px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    margin: auto;
+    transition: 150ms ease-in-out;
+}
+
+.wrong:active{
+    background-color: red;
+}
+
+.wellDoneContainer{
+    margin: auto;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+}
